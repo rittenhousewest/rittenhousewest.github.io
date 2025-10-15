@@ -1,1 +1,115 @@
-Hello, Universe!!!!
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jennifer Rittenhouse West</title>
+  <meta name="description" content="Theoretical particle physicist. Research, publications, teaching." />
+  <style>
+    :root{
+      --accent:#b44a6b;        /* subtle rose accent to match your image */
+      --ink:#222;
+      --muted:#666;
+      --bg:#fafafa;
+      --card:#ffffff;
+      --ring: rgba(180,74,107,.15);
+    }
+    @media (prefers-color-scheme: dark){
+      :root{ --ink:#e8e8e8; --muted:#bbb; --bg:#0e0f12; --card:#14161b; --ring: rgba(180,74,107,.25); }
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:var(--ink); background:var(--bg);
+    }
+    .wrap{max-width:960px; margin:auto; padding:28px 20px 60px}
+    header{
+      display:flex; align-items:center; justify-content:space-between; gap:16px; padding:8px 0 18px;
+      border-bottom:1px solid rgba(0,0,0,.06);
+    }
+    .id h1{font-size:clamp(24px,3.2vw,34px); margin:0 0 4px}
+    .id p{margin:0; color:var(--muted)}
+    nav a{color:var(--accent); text-decoration:none; margin-left:14px}
+    nav a:hover{text-decoration:underline}
+    .hero{
+      display:grid; grid-template-columns:1.15fr .85fr; gap:28px; align-items:center; margin:28px 0 10px;
+    }
+    .card{
+      background:var(--card); border:1px solid var(--ring); border-radius:16px; padding:22px;
+      box-shadow:0 6px 16px rgba(0,0,0,.06);
+    }
+    h2{margin:0 0 8px; font-size:clamp(20px,2vw,24px)}
+    .lead{margin:0; color:var(--muted)}
+    .hero img{
+      width:100%; height:auto; display:block; border-radius:16px; border:1px solid var(--ring);
+    }
+    section{margin-top:28px}
+    ul{padding-left:18px; margin:10px 0 0}
+    li+li{margin-top:6px}
+    footer{margin-top:40px; text-align:center; color:var(--muted); font-size:14px}
+    @media (max-width:860px){
+      .hero{grid-template-columns:1fr; gap:18px}
+      nav a{margin-left:10px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="id">
+        <h1>Jennifer Rittenhouse West</h1>
+        <p>Theoretical Particle Physicist</p>
+      </div>
+      <nav aria-label="Primary">
+        <a href="https://github.com/rittenhousewest" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://sites.google.com/view/rittenhousewest" target="_blank" rel="noopener">Google Site</a>
+        <span>jennifer.rittenhouse [at] gmail [dot] com</span>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="card">
+        <h2>About</h2>
+        <p class="lead">
+          I do my best to understand elementary particles and what they get up to in a variety of environments. 
+          The reason I do this is because I love the study of Nature. I love physics so much. Also the Universe even though it is so big I can barely comprehend it.
+        </p>
+      </div>
+
+      <!-- Upload your image as heart.png (or change the src) -->
+      <img src="heart.png" alt="Word-cloud heart with physics terms" loading="lazy"
+           sizes="(max-width: 860px) 100vw, 40vw" />
+    </div>
+
+    <section class="card">
+      <h2>Papers that I like, that I wrote.</h2>
+      <ul>
+        <li>“Diquark induced short-range nucleon-nucleon correlations & the EMC effect,” Nuclear Physics A 2023. 
+          <a href="https://inspirehep.net/literature/1817309" target="_blank" rel="noopener">inspirehep.net</a>
+        </li>
+        <li>“QCD hidden-color Hexadiquark in the Core of Nuclei,” Physics Letters B 2021. 
+          <a href="https://inspirehep.net/literature/1793566" target="_blank" rel="noopener">inspirehep.net</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Links</h2>
+      <ul>
+        <li><a href="https://github.com/rittenhousewest" target="_blank" rel="noopener">GitHub profile</a> (active work & contributions)</li>
+        <li><a href="https://sites.google.com/view/rittenhousewest" target="_blank" rel="noopener">Google Site</a> (tiny sparse bio, physics for the people, CV)</li>
+        <li><a href="#" target="_blank" rel="noopener">CV (PDF)</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      &copy; <span id="y"></span> Jennifer Rittenhouse West
+    </footer>
+  </div>
+
+  <script>
+    // Auto-update year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
