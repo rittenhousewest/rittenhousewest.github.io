@@ -21,6 +21,7 @@
       --card:#ffffff;
       --ring: rgba(180,74,107,.15);
     }
+    .stack { display: grid; grid-template-columns: 1fr; gap: 28px; margin-top: 28px; }
     @media (prefers-color-scheme: dark){
       :root{ --ink:#e8e8e8; --muted:#bbb; --bg:#0e0f12; --card:#14161b; --ring: rgba(180,74,107,.25); }
     }
@@ -100,34 +101,40 @@ body {
     </div>
 
 
-<section class="card">
-  <h2>Highlight papers, I like these two. More highlights to come. </h2>
-  <ul>
-    <li>
-      “Diquark induced short-range nucleon-nucleon correlations & the EMC effect,” 
-      Nuclear Physics A 2023.&nbsp;
-      <a href="https://inspirehep.net/literature/1817309" target="_blank" rel="noopener">
-        inspirehep.net
-      </a>
-    </li>
-    <li>
-      “QCD hidden-color Hexadiquark in the Core of Nuclei,” 
-      Physics Letters B 2021.&nbsp;
-      <a href="https://inspirehep.net/literature/1793566" target="_blank" rel="noopener">
-        inspirehep.net
-      </a>
-    </li>
-  </ul>
-        <h2>Nota Bene:</h2>
-        <p class="lead">
-          I would love to come give talks, if you would 
-          like to hear about diquarks, baryon/antibaryon asymmetries in colliders & fixed
-            target experiments, antiproton and antineutron cross sections in cosmic rays, and a new model 
-          of diquark transport of baryon number. I also love talking about the hidden-color states of QCD and 
-            up-down spin-0 diquarks as the proposed basis for ~20% of nuclear structure. And plenty of other
-            super darling physics.
-        </p>
-</section>
+<div class="stack">
+  <section class="card">
+    <h2>Highlight papers, I like these two. More highlights to come.</h2>
+    <ul>
+      <li>
+        “Diquark induced short-range nucleon-nucleon correlations &amp; the EMC effect,” 
+        Nuclear Physics A 2023.&nbsp;
+        <a href="https://inspirehep.net/literature/1817309" target="_blank" rel="noopener">
+          inspirehep.net
+        </a>
+      </li>
+      <li>
+        “QCD hidden-color Hexadiquark in the Core of Nuclei,” 
+        Physics Letters B 2021.&nbsp;
+        <a href="https://inspirehep.net/literature/1793566" target="_blank" rel="noopener">
+          inspirehep.net
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Nota Bene:</h2>
+    <p class="lead">
+      I would love to come give talks, if you would 
+      like to hear about diquarks, baryon/antibaryon asymmetries in colliders &amp; fixed
+      target experiments, antiproton and antineutron cross sections in cosmic rays, and a new model 
+      of diquark transport of baryon number. I also love talking about the hidden-color states of QCD and 
+      up-down spin-0 diquarks as the proposed basis for ~20% of nuclear structure. And plenty of other
+      super darling physics.
+    </p>
+  </section>
+</div>
+
 
 <div class="hero">
   <img src="heart.png" alt="Word-cloud heart with physics terms" loading="lazy"
