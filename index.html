@@ -3,69 +3,83 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Theoretical particle physicist. Research, publications, teaching." />
-  <script src="https://cdn.counter.dev/script.js" data-id="2ec22b89-11e1-47f2-bd4f-7cbceaf95241" data-utcoffset="2"></script> 
+  <title>Jennifer Rittenhouse West | Theoretical Particle Physicist</title>
+  <meta name="description" content="Theoretical particle physicist. Research, Publications, Teaching." />
+  <script src="https://cdn.counter.dev/script.js" data-id="2ec22b89-11e1-47f2-bd4f-7cbceaf95241" data-utcoffset="2"></script>
   <!-- Counter.dev for privacy-friendly, anonymous visitor statistics <3 -->
   <style>
-    footer {
-    text-align: center;
-    margin-top: 40px;  /* adds a little space above */
-    padding: 10px 0;
-    }
     :root{
-    /*  --accent:#b44a6b;        subtle rose accent to match heart image - although I don't really see this */
-      --accent:#ff2ba3;       /* brighter magenta accent */
+      --accent:#c2187a;       /* magenta, dark enough to read on white */
       --ink:#222;
-      --muted:#666;
+      --muted:#5f5f68;
       --bg:#fafafa;
       --card:#ffffff;
-      --ring: rgba(180,74,107,.15);
+      --ring:rgba(194,24,122,.16);
     }
-    .stack { display: grid; grid-template-columns: 1fr; gap: 28px; margin-top: 28px; }
     @media (prefers-color-scheme: dark){
-      :root{ --ink:#e8e8e8; --muted:#bbb; --bg:#0e0f12; --card:#14161b; --ring: rgba(180,74,107,.25); }
+      :root{
+        --accent:#ff4fb5;     /* brighter magenta on dark backgrounds */
+        --ink:#e8e8e8;
+        --muted:#b4b4bc;
+        --bg:#0e0f12;
+        --card:#14161b;
+        --ring:rgba(255,79,181,.24);
+      }
     }
     *{box-sizing:border-box}
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0;  /* tighter spacing */
-  color: var(--ink);
-  background: var(--bg);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    body{
+      margin:0;
+      font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size:16px;
+      line-height:1.6;
+      color:var(--ink);
+      background:var(--bg);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    sup{line-height:0}
 
     .wrap{max-width:960px; margin:auto; padding:28px 20px 60px}
+
     header{
-      display:flex; align-items:center; justify-content:space-between; gap:16px; padding:8px 0 18px;
-      border-bottom:1px solid rgba(0,0,0,.06);
+      display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between;
+      gap:12px 24px; padding:8px 0 18px; border-bottom:1px solid var(--ring);
     }
-    .id h1{font-size:clamp(24px,3.2vw,34px); margin:0 0 4px}
-    .id p{margin:0; color:var(--muted)}
-    nav a{color:var(--accent); text-decoration:none; margin-left:14px}
-    nav a:hover{text-decoration:underline}
+    .id h1{font-size:clamp(26px,3.4vw,36px); line-height:1.2; margin:0 0 4px}
+    .id p{margin:0; color:var(--muted); font-size:clamp(17px,1.8vw,20px)}
+    nav{display:flex; flex-wrap:wrap; gap:4px 18px}
+
     .hero{
-      display:grid; grid-template-columns:1.15fr .85fr; gap:28px; align-items:center; margin:28px 0 10px;
+      display:grid; grid-template-columns:1.15fr .85fr; gap:28px; align-items:center; margin-top:28px;
     }
+    .hero.flip{grid-template-columns:.85fr 1.15fr}
     .card{
       background:var(--card); border:1px solid var(--ring); border-radius:16px; padding:22px;
       box-shadow:0 6px 16px rgba(0,0,0,.06);
     }
-    h2{margin:0 0 4px; font-size:clamp(20px,2vw,24px)}
+    h2{margin:0 0 8px; font-size:clamp(20px,2vw,24px)}
     .lead{margin:0; color:var(--muted)}
-    .hero img{
+    .lead + .lead{margin-top:12px}
+
+    figure{margin:0}
+    figure img{
       width:100%; height:auto; display:block; border-radius:16px; border:1px solid var(--ring);
     }
+    figcaption{margin-top:8px; font-size:14px; color:var(--muted); text-align:center}
+
     section{margin-top:28px}
     ul{padding-left:18px; margin:10px 0 0}
-    li+li{margin-top:6px}
-    footer{margin-top:40px; text-align:center; color:var(--muted); font-size:14px}
+    li+li{margin-top:12px}
+    .pubs .authors{color:var(--muted)}
+    .more{margin:14px 0 0; font-size:15px}
+
+    footer{margin-top:40px; padding:10px 0; text-align:center; color:var(--muted); font-size:14px}
+
     @media (max-width:860px){
-      .hero{grid-template-columns:1fr; gap:18px}
-      nav a{margin-left:10px}
+      .hero, .hero.flip{grid-template-columns:1fr; gap:18px}
+      .hero.flip figure{order:2}
     }
   </style>
 </head>
@@ -73,8 +87,8 @@ body {
   <div class="wrap">
     <header>
       <div class="id">
-        <h1>Jennifer&nbsp;Rittenhouse&nbsp;West,&nbsp;Ph.D.</h1>
-        <h2>Theoretical Particle Physicist</h2>
+        <h1>Jennifer Rittenhouse&nbsp;West, Ph.D.</h1>
+        <p>Theoretical Particle Physicist</p>
       </div>
       <nav aria-label="Primary">
         <a href="https://github.com/rittenhousewest" target="_blank" rel="noopener">GitHub</a>
@@ -88,78 +102,77 @@ body {
       <div class="card">
         <h2>About</h2>
         <p class="lead">
-          Postdoctoral fellow in particle physics. I do my best to understand elementary particles and what they get up to in a variety of environments using both analytic mathematics and computational software. 
-          I love physics so much. Also the Universe even though it is so big I can barely comprehend it.
-          Current obsession: Diquarks. Still. But also, single-inclusive hadron production. Neutron stars & heavy ion collisions too. I am a detective and a hobo. 
+          Postdoctoral fellow in particle physics. I do my best to understand elementary particles
+          and what they get up to in a variety of environments using both analytic mathematics
+          and computational software. I love physics so much, and the whole Universe, even though
+          it is so big I can barely comprehend it.
+        </p>
+        <p class="lead">
+          Current obsession: diquarks. Still. But also single-inclusive hadron production,
+          neutron stars and heavy-ion collisions. I am a detective.
         </p>
       </div>
 
-            <!-- Upload my image as question.png  -->
-      <img src="question.png" alt="Word-cloud question mark with physics terms" loading="lazy"
-            sizes="(max-width: 860px) 100vw, 40vw" />
+      <!-- Plot image: new_na49_p_pbar.png (click opens full size) -->
+      <figure>
+        <a href="new_na49_p_pbar.png" target="_blank" rel="noopener">
+          <img src="new_na49_p_pbar.png" alt="Two-panel plot of NA49 proton and antiproton data compared with calculations" />
+        </a>
+        <figcaption>NA49 p and p&#772; data compared with my calculations. Work in progress.</figcaption>
+      </figure>
     </div>
 
-
-<div class="stack">
-  <section class="card">
-    <h2>Highlight papers, I like these two. More highlights to come.</h2>
-    <ul>
-      <li>
-        “Diquark induced short-range nucleon-nucleon correlations &amp; the EMC effect,” 
-        Nuclear Physics A 2023.&nbsp;
-        <a href="https://inspirehep.net/literature/1817309" target="_blank" rel="noopener">
-          inspirehep.net
-        </a>
-      </li>
-      <li>
-        “QCD hidden-color Hexadiquark in the Core of Nuclei,” 
-        Nuclear Physics A 2021.&nbsp;
-        <a href="https://inspirehep.net/literature/1793566" target="_blank" rel="noopener">
-          inspirehep.net
-        </a>
-      </li>
-    </ul>
-  </section>
-
-  <section class="card">
-    <h2>Nota Bene:</h2>
-    <p class="lead">
-      I would love to come give talks, if you would 
-      like to hear about diquarks, baryon/antibaryon asymmetries in colliders &amp; fixed
-      target experiments, antibaryon cross sections in cosmic rays, and a new model 
-      of diquark transport of baryon number. I also love talking about hidden-color states of QCD and 
-      up-down spin-0 diquarks as the proposed basis for ~20% of nuclear structure. And plenty of other
-      super darling physics. Theory building, early Universe cosmology? I am your physicist.
-    </p>
-  </section>
-</div>
-
-
-<div class="hero">
-  <img src="heart.png" alt="Word-cloud heart with physics terms" loading="lazy"
-       sizes="(max-width: 860px) 100vw, 40vw" />
-
-  <div class="card">
-    <h2>Nota Benissimo:</h2>
-    <p class="lead">
-      I am an anti-fascist. I am also a union woman.
-    </p>
-  </div>
-</div>
-
     <section class="card">
-      <h2>Links (these are also up top)</h2>
-      <ul>
-        <li><a href="https://github.com/rittenhousewest" target="_blank" rel="noopener">GitHub profile</a> (active work & contributions)</li>
-        <li><a href="https://inspirehep.net/authors/1306573?ui-citation-summary=true" target="_blank" rel="noopener">INSPIRE-HEP profile</a> (full publication list & citation summary)</li>
-        <li><a href="https://sites.google.com/view/rittenhousewest" target="_blank" rel="noopener">Google Site</a> (tiny sparse bio, physics for the people, CV)</li>
+      <h2>Selected papers</h2>
+      <ul class="pubs">
+        <li>
+          “Diquark induced short-range nucleon-nucleon correlations &amp; the EMC effect,”
+          <span class="authors">J. Rittenhouse West,</span>
+          <em>Nuclear Physics A</em> 1029, 122563 (2023).
+          <a href="https://arxiv.org/abs/2009.06968" target="_blank" rel="noopener">arXiv</a> ·
+          <a href="https://inspirehep.net/literature/1817309" target="_blank" rel="noopener">INSPIRE</a>
+        </li>
+        <li>
+          “QCD hidden-color hexadiquark in the core of nuclei,”
+          <span class="authors">J. Rittenhouse West, S. J. Brodsky, G. F. de Téramond, A. S. Goldhaber, I. Schmidt,</span>
+          <em>Nuclear Physics A</em> 1007 (2021).
+          <a href="https://arxiv.org/abs/2004.14659" target="_blank" rel="noopener">arXiv</a> ·
+          <a href="https://inspirehep.net/literature/1793566" target="_blank" rel="noopener">INSPIRE</a>
+        </li>
       </ul>
+      <p class="more">
+        Full publication list on
+        <a href="https://inspirehep.net/authors/1306573?ui-citation-summary=true" target="_blank" rel="noopener">INSPIRE-HEP</a>.
+      </p>
     </section>
-          </div>
 
-    <footer>
-      &copy; <span id="y"></span> Jennifer Rittenhouse West
-    </footer>
+    <div class="hero flip">
+      <!-- Photo: solar_eclipse_August2026.jpeg -->
+      <figure>
+        <img src="solar_eclipse_August2026.jpeg" alt="Solar eclipse: an orange sun in the sky above a dark city street" loading="lazy" />
+        <figcaption>Solar eclipse from Italy, August 2026.</figcaption>
+      </figure>
+
+      <div class="card">
+        <h2>Nota Bene:</h2>
+        <p class="lead">
+          I would love to come give talks, if you would like to hear about quantum chromodynamics, diquarks in almost any situation but espeically in nuclei, 
+          baryon/antibaryon asymmetries in colliders &amp; fixed target experiments, antibaryon
+          cross sections in cosmic rays or a new model of diquark transport of baryon number.
+          I also love talking about hidden-color states of QCD and up-down no-spin diquarks as the
+          proposed basis for ~20% of nuclear structure, and plenty of other physics I adore.
+          Theory building, early Universe cosmology? I am your physicist.
+        </p>
+        <p class="lead">
+          I have taught a lot of undergraduate physics at University of Californial Davis and Irvine. I have the best student evaluations to prove it. By "the best" I mean from the most expressive and interesting students, and I did teach hundreds.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; <span id="y"></span> Jennifer Rittenhouse West
+  </footer>
 
   <script>
     // Auto-update year
